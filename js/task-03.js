@@ -13,18 +13,11 @@ const images = [
   },
 ];
 const gallery = document.querySelector(".gallery");
-const item = `<li></li>`;
 const imagesCollection = images.forEach((image) => {
-  const listString = `<li><img class = "img1"><img class = "img2"><img class = "img3"></li>`;
+  const listString = `<li><img></li>`;
   gallery.insertAdjacentHTML("afterbegin", `${listString}`);
-  const pictureOne = document.querySelector(".img1");
-  const pictureTwo = document.querySelector(".img2");
-  const pictureThree = document.querySelector(".img3");
-  pictureOne.src = image.url;
-  pictureOne.alt = image.alt;
-  pictureTwo.src = image.url;
-  pictureTwo.alt = image.alt;
-  pictureThree.src = image.url;
-  pictureThree.alt = image.alt;
+  const img = document.querySelector("img");
+  img.src = image.url;
+  img.alt = image.alt;
   return;
 });

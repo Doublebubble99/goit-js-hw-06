@@ -1,7 +1,10 @@
 const loginForm = document.querySelector(".login-form");
 const button = document.querySelector("button");
 loginForm.setAttribute("autocomplete", "on");
-
+const password = document.querySelector("[name = 'password']");
+password.value.trim();
+const email = document.querySelector("[name = 'email']");
+email.value.trim();
 loginForm.addEventListener("submit", valuesValid);
 
 function valuesValid(event) {
