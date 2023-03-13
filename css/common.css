@@ -31,7 +31,6 @@ img {
   margin-left: auto;
   display: grid;
   grid-template:
-    "a b c" 10ch
-    "a b c" 5em
-    "a b c" 5em / 30% 550px 5fr;
+    "a a a" 20%
+    "b b b" auto;
 }
